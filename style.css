@@ -251,6 +251,7 @@ button {
   width: 20em;
   margin-top: 2rem;
   cursor: pointer;
+  border-radius: 30px;
 }
 
 button:hover {
