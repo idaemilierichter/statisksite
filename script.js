@@ -30,7 +30,8 @@ function showFashion(fashionJSON) {
     console.log("fashion", fashion);
     fashionClone = fashionTemplate.cloneNode(true).content;
     fashionClone.querySelector("a").href = `produkt.html?id=${fashion.id}`;
-    fashionClone.querySelector(".fashion_image").src = fashion.image_url;
+    const imagePath = `https://kea-alt-del.dk/t7/images/webp/640/${fashion.id}.webp`;
+    fashionClone.querySelector(".fashion_image").src = imagePath;
     fashionClone.querySelector(".fashion_image").alt = `Picture of a ${fashion.name} clothingitem`;
     fashionClone.querySelector(".fashion_name").textContent = fashion.productdisplayname;
     fashionClone.querySelector(".subtle").textContent = fashion.brandname;

@@ -10,7 +10,7 @@ const parent = document.querySelector("section");
 
 function vis(data) {
   console.log(data[0]);
-  document.querySelector(".productname").textContent = data[0].productdisplayname;
-  document.querySelector(".price").textContent = data[0].price;
-  document.querySelector("img").src = data[0].image_url;
+  document.querySelector(".productname").textContent = data.productdisplayname;
+  document.querySelector(".price").textContent = data.price;
+  document.querySelector("img").src = data.image_url;
 }
