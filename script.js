@@ -29,6 +29,7 @@ function showFashion(fashionJSON) {
   fashionJSON.forEach((fashion) => {
     console.log("fashion", fashion);
     fashionClone = fashionTemplate.cloneNode(true).content;
+    fashionClone.querySelector("a").href = `produkt.html?id=${fashion.id}`;
     fashionClone.querySelector(".fashion_image").src = fashion.image_url;
     fashionClone.querySelector(".fashion_image").alt = `Picture of a ${fashion.name} clothingitem`;
     fashionClone.querySelector(".fashion_name").textContent = fashion.productdisplayname;

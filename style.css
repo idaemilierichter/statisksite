@@ -141,15 +141,15 @@ h2 {
 
 /*Produktliste*/
 
-.produktoversigt,
-.fashion_container {
+.fashion_container,
+.produktoversigt {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 290px));
   gap: 10%;
   padding-left: 10%;
   padding-right: 10%;
   place-items: center;
-  margin-bottom: 10%;
+  margin-bottom: 20%;
 }
 
 .produktoversigt img {
@@ -230,6 +230,11 @@ h3 {
   background-color: rgb(152, 152, 255);
   padding: 0.5em;
   border-radius: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 /*PRODUKT*/

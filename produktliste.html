@@ -23,6 +23,8 @@
     </header>
     <main>
         <h2>Tøj</h2>
+        <div class="fashion_container">
+        </div>
         <div class="produktoversigt">
             <article>
                 <img src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="Cricket jersey">
@@ -74,8 +76,6 @@
                 <a href="produkt.html">Læs mere</a>
             </article>
         </div>
-        <div class="fashion_container">
-        </div>
     </main>
     <script src="script.js"></script>
 </body>
@@ -83,15 +83,16 @@
 </html>
 
 <template class="fashion_template">
-    <article class="fashion_article">
-        <img class="fashion_image" src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="Cricket jersey">
-        <h3 class="fashion_name">Mean Team India Cricket Jersey</h3>
-        <p class="subtle">
-            T-shirts l Nike
-        </p>
-        <p class="price">
-            DKK 2495,-
-        </p>
-        <a href="produkt.html">Læs mere</a>
-    </article>
+    <a href="produkt.html">
+        <article class="fashion_article">
+            <img class="fashion_image" src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="Cricket jersey">
+            <h3 class="fashion_name">Mean Team India Cricket Jersey</h3>
+            <p class="subtle">
+                T-shirts l Nike
+            </p>
+            <p class="price">
+                DKK 2495,-
+            </p>
+        </article>
+    </a>
 </template>
