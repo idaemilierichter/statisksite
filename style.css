@@ -141,7 +141,8 @@ h2 {
 
 /*Produktliste*/
 
-.produktoversigt {
+.produktoversigt,
+.fashion_container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 290px));
   gap: 10%;
@@ -178,6 +179,12 @@ h3 {
 }
 
 .produktoversigt a {
+  font-family: "roboto";
+  font-size: 1rem;
+  color: black;
+}
+
+.fashion_container a {
   font-family: "roboto";
   font-size: 1rem;
   color: black;
@@ -241,6 +248,10 @@ h3 {
   font-size: 2rem;
 }
 
+.grid_2 p {
+  font-family: "roboto";
+}
+
 button {
   font-family: "roboto";
   font-size: 1.2rem;
@@ -260,7 +271,7 @@ button:hover {
 
 form {
   margin-top: 2rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: "roboto";
 }
 
@@ -277,7 +288,7 @@ h4 {
 
 h5 {
   margin-top: 2rem;
-  font-family: "roboto";
+  font-family: "fjalla one";
   font-size: 1rem;
   font-weight: bolder;
 }
