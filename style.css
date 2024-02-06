@@ -102,15 +102,15 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 400px));
   place-items: center;
-  gap: 2.5em;
+  gap: 2.5rem;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 5%;
 }
 
 .kategoricontainer img {
-  height: 20em;
-  width: 25em;
+  height: 20rem;
+  max-width: 100%;
   object-fit: cover;
 }
 
@@ -119,7 +119,7 @@ h2 {
   color: black;
   font-size: 1rem;
   background-color: white;
-  padding: 1em;
+  padding: 1rem;
   border-radius: 50px;
   text-decoration: none;
 }
@@ -145,11 +145,16 @@ h2 {
 .produktoversigt {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 290px));
-  gap: 10%;
+  gap: 2rem;
   padding-left: 10%;
   padding-right: 10%;
   place-items: center;
-  margin-bottom: 20%;
+  margin-bottom: 50%;
+}
+
+.fashion_article {
+  position: relative;
+  height: 100%;
 }
 
 .produktoversigt img {
@@ -158,29 +163,28 @@ h2 {
 }
 
 .fashion_container img {
-  height: 25em;
-  width: 20em;
+  max-width: 100%;
 }
 
 h3 {
   font-family: "roboto";
   font-size: 1.2rem;
   font-weight: bolder;
-  margin-bottom: 1em;
-  margin-top: 1em;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .subtle {
   font-family: "roboto";
   font-size: 1rem;
   color: grey;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
 }
 
 .price {
   font-family: "roboto";
   font-size: 1rem;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 .produktoversigt a {
@@ -231,15 +235,23 @@ h3 {
   margin-bottom: 0.4rem;
 }
 
-.red {
+.rabat {
   background-color: rgb(152, 152, 255);
   padding: 0.5em;
   border-radius: 25px;
+  width: 15%;
 }
 
-a {
-  text-decoration: none;
-  color: black;
+.fashion_link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.hide {
+  display: none;
 }
 
 /*PRODUKT*/

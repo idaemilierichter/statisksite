@@ -11,6 +11,11 @@ const parent = document.querySelector("section");
 function vis(data) {
   console.log(data[0]);
   document.querySelector(".productname").textContent = data.productdisplayname;
+  document.querySelector(".brand").textContent = data.brandname;
   document.querySelector(".price").textContent = data.price;
+  document.querySelector(".displayname").textContent = data.productdisplayname;
+  document.querySelector(".farve").textContent = data.basecolour;
+  document.querySelector(".farve2").textContent = data.basecolour;
+  document.querySelector(".id").textContent = data.id;
   document.querySelector("img").src = data.image_url;
 }
